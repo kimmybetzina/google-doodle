@@ -1,0 +1,102 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Oswald Light'), local('Oswald-Light'), url(https://fonts.gstatic.com/s/oswald/v10/l1cOQ90roY9yC7voEhngDBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Oswald Light'), local('Oswald-Light'), url(https://fonts.gstatic.com/s/oswald/v10/HqHm7BVC_nzzTui2lzQTDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+svg {
+  width: 50%;
+  margin-left: -3.5em;
+  display: inline;
+  margin-right: -5em;
+  
+}
+.v {
+  stroke: black;
+  stroke-width: 5;
+  stroke-dasharray: 1275;
+  stroke-dashoffset: 1275;
+  
+  animation: 
+    traceline 2s linear forwards, 
+    /* set delay equal to time to draw */
+    newcolor 1s linear 3s forwards;
+}
+.c {
+  stroke: black;
+  stroke-width: 5;
+  stroke-dasharray: 950;
+  stroke-dashoffset: 950;
+  
+  animation: 
+    traceline 2s linear forwards, 
+    /* set delay equal to time to draw */
+    newcolor 1s linear 3s forwards;
+}
+.d1 {
+  stroke: black;
+  stroke-width: 5;
+  stroke-dasharray: 2250;
+  stroke-dashoffset: 2250;
+  
+  animation: 
+    traceline 2s linear forwards, 
+    /* set delay equal to time to draw */
+    newcolor 1s linear 3s forwards;
+}
+.d2 {
+  stroke: black;
+  stroke-width: 5;
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+  
+  animation: 
+    traceline 2s linear forwards, 
+    /* set delay equal to time to draw */
+    newcolor 1s linear 3s forwards;
+}
+
+@keyframes traceline {
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes newcolor {
+  100% {
+      stroke: #D1BED0;
+  }
+}
+.day {
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+  margin-left: -.5em;
+  font-size: 6.5em;
+  animation: fadeInLeft 3s; 
+}
+h1 {
+      font-family: 'Oswald', sans-serif;
+    font-size: 5.5em;
+    letter-spacing: .1em;
+    text-align: left;
+  display: block;
+  margin-bottom: -1.8em;
+  animation: fadeInLeft 4.3s;
+ 
+}
+
+img {
+  margin-top: 2em;
+  margin-left: 2em;
+}
